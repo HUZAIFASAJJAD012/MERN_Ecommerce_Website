@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Apply styles to all elements */
+* {
+  /* Remove default margin from all elements */
+  margin: 0;
+  /* Remove default padding from all elements */
+  padding: 0;
+  /* Ensure the padding and border are included in the element's total width and height */
+  box-sizing: border-box;
+  /* Set the font family to "Rowdies" with a fallback to sans-serif */
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Apply styles to all h1 elements */
+h1 {
+  /* Set the font size of h1 elements to 50px */
+  font-size: 50px;
+  /* Set the line height of h1 elements to 64px */
+  line-height: 64px;
+  /* Set the color of the text in h1 elements to black */
+  color: black;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: black;
+}
+
+h4 {
+  font-size: 20px;
+  color: black;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  margin: 15px 0 20px 0;
+}
+.section-p1{
+
+padding:40px 80px;
+
+}

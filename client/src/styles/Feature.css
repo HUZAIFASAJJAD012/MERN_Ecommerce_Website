@@ -1,0 +1,80 @@
+/* Base Styles */
+#feature img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .fe-box {
+  border-radius: 5%;
+  width: 140px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0px 10px 34px rgb(149, 145, 145);
+  margin: 15px 0;
+  color: #ffffff;
+  flex: 1 1 auto; /* Allows the boxes to grow/shrink as needed */
+}
+
+#feature .fe-box:hover {
+  box-shadow: 0px 10px 54px rgb(24, 24, 24);
+}
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px; /* Reduce padding for smaller screens */
+  flex-wrap: wrap;
+}
+
+/* Responsive Text and Box Adjustments */
+#feature .fe-box h6 {
+  background-color: rgb(64, 64, 64);
+  display: inline-block;
+  line-height: 1;
+  border-radius: 4px;
+  padding: 9px 8px 6px 8px;
+  font-size: 1rem; /* Adjusts with font scaling */
+}
+
+/* Specific Background Colors */
+#feature .fe-box:nth-child(2) h6 {
+  background-color: rgb(150, 98, 98);
+}
+#feature .fe-box:nth-child(3) h6 {
+  background-color: rgb(130, 131, 78);
+}
+#feature .fe-box:nth-child(4) h6 {
+  background-color: rgb(73, 141, 84);
+}
+#feature .fe-box:nth-child(5) h6 {
+  background-color: rgb(73, 76, 141);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  #feature {
+    justify-content: center; /* Center items on smaller screens */
+    padding: 0 10px; /* Further reduce padding */
+  }
+
+  #feature .fe-box {
+    width: 100px; /* Adjust width for smaller screens */
+    margin: 10px 5px;
+  }
+
+  #feature .fe-box h6 {
+    font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #feature .fe-box {
+    width: 80px; /* Further adjust width for very small screens */
+    padding: 20px 10px; /* Reduce padding for better fit */
+  }
+
+  #feature .fe-box h6 {
+    font-size: 0.8rem; /* Further reduce font size */
+  }
+}
