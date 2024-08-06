@@ -290,7 +290,7 @@ export default function Header() {
                   <span className="sr-only">Your Company</span>
                   <img
                     alt=""
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src={ require("../components/images/E.jpg")}
                     className="h-8 w-auto"
                   />
                 </a>
@@ -393,10 +393,10 @@ export default function Header() {
                   <a href="#" className="flex items-center text-gray-700 hover:text-gray-800">
                     <img
                       alt=""
-                      src="https://tailwindui.com/img/flags/flag-canada.svg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThWADLawT8Um17qGEiE5LUYAwNZ5jh5kiDjA&s"
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span className="ml-3 block text-sm font-medium">CAD</span>
+                    <span className="ml-3 block text-sm font-medium">PK</span>
                     <span className="sr-only">, change currency</span>
                   </a>
                 </div>
