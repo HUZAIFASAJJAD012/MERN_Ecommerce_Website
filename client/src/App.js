@@ -1,12 +1,9 @@
-import Header from "./components/Header";
-import Homepage from "./pages/HomePage";
+
 
 function App() {
   return (
     <div >
-<Header/>
-
-<Homepage/>
+<h1>hello</h1>
     </div>
   );
 }
