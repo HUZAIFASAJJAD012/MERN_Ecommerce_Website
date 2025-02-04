@@ -41,13 +41,14 @@ const User = mongoose.model("User", userSchema);
 userSchema,pre("save",async function(next){
     if(!this.isModified("password")) return next();
    try {
-    const salt=await bcrypt.genSalt(10);
+    const salt=await bcrypt.genSalt(10); //Generates a salt (random string) with 10 rounds of complexity
     this.password=await bcrypt.hash(this.password,salt);
-    next();
+    next();// The next() function in Mongoose middleware is used to move to the next step in the process
    } catch (error) {
     next(error);
    }
 })
+// static method to check if password is correct
 userSchema.methods.comparePassword=async function(password){
     return await bcrypt.compare(password,this.password);
 }
